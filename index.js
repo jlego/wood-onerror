@@ -4,6 +4,7 @@
  * by jlego on 2018-11-24
  */
 const cluster = require('cluster');
+const { catchErr, error } = WOOD;
 
 module.exports = (app = {}, config = {}) => {
   // 返回错误信息
